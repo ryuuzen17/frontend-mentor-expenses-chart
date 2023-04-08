@@ -1,0 +1,76 @@
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--Cream);
+}
+h2 {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+main .card-chart {
+  width: 33%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .card-chart .card-top {
+  background-color: var(--Soft-red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-radius: 10px 10px 10px 10px;
+  color: var(--Very-pale-orange);
+}
+main .card-chart .card-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--Very-pale-orange);
+  border-radius: 10px 10px 10px 10px;
+  padding: 1rem 1rem;
+}
+main .card-chart .card-bottom .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .card-chart .card-bottom .total .last-month p span {
+  font-weight: 700;
+}
+hr {
+  background-color: var(--Soft-red);
+  height: 1px;
+  border: none;
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 80%;
+  }
+  main .card-chart {
+    width: 90%;
+  }
+}
